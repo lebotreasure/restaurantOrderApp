@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "budgetCalculator",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
