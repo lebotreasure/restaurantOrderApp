@@ -24,3 +24,21 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'Plex';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/IBMPlexSans-Regular.ttf');
+  }
+   
+  @font-face {
+    font-family: 'Plex';
+    font-weight: bold;
+    src: url('/assets/fonts/IBMPlexSans-Bold.ttf');
+  }
+   
+  :root {
+      --ion-text-color: #828585;
+      --ion-font-family: 'Plex';
+  }
