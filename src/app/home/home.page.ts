@@ -37,23 +37,23 @@ export class HomePage implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('https://devdactic.fra1.digitaloceanspaces.com/foodui/1.json').subscribe((res: any) => {
+    this.http.get('https://devdactic.fra1.digitaloceanspaces.com/foodui/home.json').subscribe((res: any) => {
       this.categories = res.categories;
       this.highlights = res.highlights;
       this.featured = res.featured;
+      //console.log(res);
     });
+  }
 
-    function doRefresh(event) {
-      setTimeout(() => {
-        event.target.complete();
-      }, 2000);
-    }
+  doRefresh(event) {
+    setTimeout(() => {
+      event.target.complete();
+    }, 2000);
+  }
 
-    function onscroll(ev) {
-      const offset = ev.detail.scrollTop;
-      this.showLocationDetail = offset > 40;
-    }
-
+  onScroll(ev) {
+    const offset = ev.detail.scrollTop;
+    this.showLocationDetail = offset > 40;
   }
 
 }

@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="light">
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button fill="solid" shape="round" color="light" routerLink="/home">
         <ion-icon slot="icon-only" name="arrow-back" color="primary"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -69,13 +69,13 @@
               <p>Map, allergene ad hygiene rating
               </p>
             </ion-label>
-
-            <ion-col size="1">
-              <ion-icon color="primary" name="chevron-forward"></ion-icon>
-            </ion-col>
-          </ion-row>
+          </ion-col>
+          <ion-col size="1">
+            <ion-icon color="primary" name="chevron-forward"></ion-icon>
           </ion-col>
         </ion-row>
+      </ion-col>
+    </ion-row>
 
   </div>
 
@@ -106,7 +106,7 @@
           <p>{{ meal.info }}</p>
         </ion-label>
         <ion-text color="dark"><b>
-          {{ meal.price | currency:'EUR' }}
+          {{ meal.price | currency:'ZAR' }}
         </b></ion-text>
       </ion-col>
 
